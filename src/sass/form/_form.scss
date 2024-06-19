@@ -1,0 +1,21 @@
+.form {
+    background-color: var(--bs-blue);
+}
+
+.form button {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.form .btn {
+    height: auto; /* Ajusta automáticamente la altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .btn a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
