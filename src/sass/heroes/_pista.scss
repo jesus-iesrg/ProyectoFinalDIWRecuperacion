@@ -1,0 +1,49 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+/* Pistas */
+.pista, .pista2, .pista3{
+    height: 55rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.pista__info h1 {
+    margin-top: 5rem;
+}
+
+.pista__info p {
+    margin-top: 2.5rem;
+}
+
+.pista__info button {
+    margin-top: 1.5rem;
+}
+
+.pista {
+    background-image: url("../../img/pista1.png");
+}
+
+.pista2 {
+    background-image: url("../../img/pista2.png");
+}
+
+.pista3 {
+    background-image: url("../../img/pista3.png");
+}
+
+.pista, .pista2, .pista3{
+    grid-area: pista;
+}
+
+.pista__info {
+    grid-area: pista__info;
+}
+
+.grid-container3 {
+    @include m.create-grid-template('pista', 'pista__info');
+}
+
+.grid-container2,.grid-container4 {
+    @include m.create-grid-template2('pista__info', 'pista');
+}
