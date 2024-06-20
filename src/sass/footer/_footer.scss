@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer{
+    background-color: #D9D9D9;
+    &__logo{
+        width:4em; 
+        height:6em;
+        margin-bottom: v.$separation;
+        @include m.desktop{
+            margin-bottom: 0;
+        }
+    }
+}
