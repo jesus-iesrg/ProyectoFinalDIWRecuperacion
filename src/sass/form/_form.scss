@@ -1,0 +1,35 @@
+.form {
+  background-color: var(--bs-blue);
+}
+
+.form button {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.form .btn {
+  height: auto; /* Ajusta automáticamente la altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .btn a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.form-select, .form-control, .form-floating textarea {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
+
+.form-label {
+  font-size: 1.8rem;
+}
+
+.form-control-lg {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
